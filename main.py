@@ -25,3 +25,8 @@ st.write("you can convert celcius to fahrenheit....")
 myslider = st.slider('Celcius')
 st.write(myslider, 'in Fahrneheit is', myslider * 9/5 + 32)
 st.write("cool!! isn't it.....")
+
+st.subheader('Age Calculator')
+date =st.date_input("When's your Birthday?")
+st.write("your birhday is:", date)
+st.write("your Age is:", 2021 - date.year)
