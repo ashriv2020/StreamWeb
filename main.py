@@ -13,4 +13,7 @@ Great Journey need to start early!!
 Let's Start....
 ''')
 df = pandas.DataFrame(data)
+st.subheader('adding pandas dataframe!')
 st.write(df);
+st.subheader('here is chart...')
+st.line_chart(df)
