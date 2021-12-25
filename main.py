@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas
+from datetime import datetime as dt
 
 data= {
   'Series_1':[1,3,5,7,9],
@@ -27,9 +28,10 @@ st.write(myslider, 'in Fahrneheit is', myslider * 9/5 + 32)
 st.write("cool!! isn't it.....")
 
 st.subheader('Age Calculator')
-date =st.date_input("When's your Birthday?")
-st.write("your birhday is:", date)
-st.write("your Age is:", 2021 - date.year)
+now= dt.now()
+birth_date =st.date_input("When's your Birthday?")
+st.write("your birhday is:", birth_date)
+st.write("your Age is:", now.year - birth_date.year)
 
 genders = [ 'Female','Male', 'Others']
 st.subheader('Some more Fun!')
