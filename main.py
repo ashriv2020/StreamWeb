@@ -31,7 +31,7 @@ st.subheader('Age Calculator')
 now= dt.now()
 birth_date =st.date_input("When's your Birthday?")
 st.write("your birhday is:", birth_date)
-st.write("your Age is:", now.year - birth_date.year)
+st.write("You're :", str(now.year - birth_date.year)+ ' years ' + str(now.month - birth_date.month) + ' months ' + str(now.day - birth_date.day) + ' days Old')
 
 genders = [ 'Female','Male', 'Others']
 st.subheader('Some more Fun!')
