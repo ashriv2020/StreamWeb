@@ -30,3 +30,8 @@ st.subheader('Age Calculator')
 date =st.date_input("When's your Birthday?")
 st.write("your birhday is:", date)
 st.write("your Age is:", 2021 - date.year)
+
+genders = [ 'Female','Male', 'Others']
+st.subheader('Some more Fun!')
+gender = st.radio('what is your gender?', genders)
+st.write('You are ', gender)
