@@ -17,3 +17,5 @@ st.subheader('adding pandas dataframe!')
 st.write(df);
 st.subheader('here is chart...')
 st.line_chart(df)
+st.subheader('area chart...')
+st.area_chart(df)
